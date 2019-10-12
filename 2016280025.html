@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>2016280025 Hasan Ali Rıdvanoğulları</title>
+  </head>
+  <body>
+    <h1>Hasan Ali Rıdvanoğulları 2016280025</h1>
+	<label for="id1">Metin kutusu 1</label>
+    <input type="text" id="i1" />
+	<br>
+	<label for="id2">Metin kutusu 2</label>
+    <input type="text" id="i2" />
+	<br>
+    <button type="button" onclick="topla()">topla</button>
+	<br>
+	<label for="id3">Metin kutusu 3</label>
+    <input type="text" id="i3" />
+	<br>
+	<label for="id4">Metin kutusu 4</label>
+    <input type="text" id="i4" />
+	<br>
+    <button type="button" onclick="yapistir()">yapıştır</button>
+	<br>
+    <script>
+      function topla() {
+        var i1 = document.getElementById("i1").value;
+        var i2 = document.getElementById("i2").value;
+
+        // Sayı kontrolü
+        if (isNaN(i1) || isNaN(i2)) {
+          alert("Lütfen sadece sayı girin!");
+        } else {
+          alert("Toplam: " + (Number(i1) + Number(i2)));
+        }
+      }
+
+      function yapistir() {
+        var i3 = document.getElementById("i3").value;
+        var i4 = document.getElementById("i4").value;
+        alert(i3 + i4);
+      }
+    </script>
+  </body>
+</html>
